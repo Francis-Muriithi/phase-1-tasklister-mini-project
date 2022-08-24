@@ -12,8 +12,8 @@ function addTask(e){
   let listTask = document.createElement("li");
   let btn = document.createElement("button");
   btn.addEventListener("click", handleDelete)
-  btn.textContent= "X";
-  listTask.innerText = `${task} `;
+  btn.textContent= "Delete";
+  listTask.innerText = ` ${task} `;
   document.getElementById('tasks').appendChild(listTask);
   listTask.appendChild(btn);
   e.target.querySelector('#new-task-description').value = '';
